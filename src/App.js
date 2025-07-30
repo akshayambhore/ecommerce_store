@@ -1,7 +1,9 @@
+import Headar from './componants/Headar';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the E-commerce Store</h1>
+      <Headar />
+
     </div>
   );
 }
