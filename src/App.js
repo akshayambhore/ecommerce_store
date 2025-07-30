@@ -1,4 +1,4 @@
-import Headar from './componants/Headar';
+import Headar from './componants/Headar/Headar';
 function App() {
   return (
     <div className="App">
