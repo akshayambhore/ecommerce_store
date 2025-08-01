@@ -1,0 +1,33 @@
+
+img
+{
+    height: 300px;
+   border: 1px solid black;
+}
+.product_container
+{
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+}
+.product
+{
+    
+    margin: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.white-btn
+{
+    /* background-color: rgb(247, 187, 22); */
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    font-weight: bold;
+    /* border: none; */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}

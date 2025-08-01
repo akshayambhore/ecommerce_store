@@ -1,21 +1,21 @@
-
+import "./products.css"
 import products from './product';
 export function Product({id , name , image })
 {
     return (
-         <div key={id}>
+         <div key={id} class="product">
                     <img src={require(`./images/${image}`)} alt={name}/>
                     <div>
-                        product name : {name}
+                        {name}
                     </div>
-                    <button> Add to Cart </button>
+                    <button class="white-btn"> Add to Cart </button>
                 </div>
     )
 }
 
 function Products ()
 {
-    return (<div>    
+    return (<div class="product_container">    
        {
             products.map((product) => 
             {

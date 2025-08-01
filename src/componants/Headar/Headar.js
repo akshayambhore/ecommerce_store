@@ -1,16 +1,17 @@
 import "./Headar.css";
 
-function Headar() {
+function Headar({opencart}) {
+ 
   return (
-    <header>
+    
       <div className="head">
         <div>My E-Comarce Store</div>
         <div>
-            <button class="cart">cart</button>
-            <button class="login">login</button>
+            <button className="cart" onClick={opencart}>cart</button>
+            <button className="login" >login</button>
         </div>
+        
         </div>
-    </header>
   );
 }
 export default Headar;
