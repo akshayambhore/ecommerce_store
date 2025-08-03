@@ -1,6 +1,5 @@
 import "./products.css"
-import products from './product';
-export function Product({id , name , image })
+export function Product({id , name , image ,onAdd})
 {
     return (
          <div key={id} class="product">
@@ -8,25 +7,19 @@ export function Product({id , name , image })
                     <div>
                         {name}
                     </div>
-                    <button class="white-btn"> Add to Cart </button>
+                    <button class="white-btn" onClick={()=>onAdd(id,name,image)}> Add to Cart </button>
                 </div>
     )
 }
 
-function Products ()
+function Products ({ products, onAddToCart})
 {
     return (<div class="product_container">    
        {
             products.map((product) => 
             {
-                return <Product key={product.id} id ={product.id} name ={product.name} image ={product.image}/>
-                // (<div key={product.id}>
-                //     <img src={require(`./images/${product.image}`)} alt={product.name}/>
-                //     <div>
-                //         product name : {product.name}
-                //     </div>
-                //     <button> Add to Cart </button>
-                // </div>)
+                return <Product key={product.id} id ={product.id} name ={product.name} image ={product.image} onAdd={onAddToCart}/>
+               
             })
        }
     </div>)
